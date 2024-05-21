@@ -7,4 +7,5 @@ RUN pip install numpy plotly sympy dash dash-bootstrap-components dash-daq
 WORKDIR /app
 COPY ./dispersion_calc.py .
 
+EXPOSE 8080
 ENTRYPOINT ["python", "dispersion_calc.py"]
